@@ -1,31 +1,27 @@
 package com.portfolio.demo.model;
-import javax.xml.crypto.Data;
-
 import lombok.Getter;
 import lombok.Setter;
 import java.util.Date;
 @Getter
 @Setter
-public class ExperienciaLaboral {
+public class Educacion {
    private int id;
-   private String logo;
    private Date fecha_inicio;
    private Date fecha_final;
    private String nombre_empresa;
-   private String cargo;
+   private String titulo;
    private String descripcion;
 
-   public ExperienciaLaboral() {
+   public Educacion() {
    }
 
-   public ExperienciaLaboral(int id, String logo, Date fecha_inicio, Date fecha_final, String nombre_empresa,
-         String cargo, String descripcion) {
+   public Educacion(int id, Date fecha_inicio, Date fecha_final, String nombre_empresa, String titulo,
+         String descripcion) {
       this.id = id;
-      this.logo = logo;
       this.fecha_inicio = fecha_inicio;
       this.fecha_final = fecha_final;
       this.nombre_empresa = nombre_empresa;
-      this.cargo = cargo;
+      this.titulo = titulo;
       this.descripcion = descripcion;
    }
 
@@ -33,4 +29,5 @@ public class ExperienciaLaboral {
 
    
 
+   
 }
