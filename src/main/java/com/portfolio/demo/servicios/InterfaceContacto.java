@@ -2,15 +2,17 @@ package com.portfolio.demo.servicios;
 
 import java.util.List;
 
+import com.portfolio.demo.model.Contacto;
+
 public interface InterfaceContacto {
    
-   public List<Habilidad> listarTodo();
+   public Contacto listarTodo();
 
-   public void actualizar();
+   public void actualizar(String telefono, String direccion, String email);
 
-   public void modificar();
+   public void modificar(String telefono, String direccion, String email);
 
-   public Habilidad buscar();
+   public Contacto buscar(int id);
 
-   public void eliminar();
+   public void eliminar(int id);
 }

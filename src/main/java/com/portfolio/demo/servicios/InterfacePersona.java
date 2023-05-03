@@ -1,15 +1,17 @@
 package com.portfolio.demo.servicios;
 import java.util.List;
+
+import com.portfolio.demo.model.Persona;
 public interface InterfacePersona {
 
-   public List<Habilidad> listarTodo();
+   public List<Persona> listarTodo();
 
-   public void actualizar();
+   public void actualizar(String titulo,String imagen, String password,String usuario);
 
    public void modificar();
 
-   public Habilidad buscar();
+   public Persona buscar(int id);
 
-   public void eliminar();
+   public void eliminar(int id);
    
 }

@@ -2,15 +2,17 @@ package com.portfolio.demo.servicios;
 
 import java.util.List;
 
-public interface InterfaceSobreMi {
-   public List<Habilidad> listarTodo();
+import com.portfolio.demo.model.SobreMi;
 
-   public void actualizar();
+public interface InterfaceSobreMi {
+   public SobreMi listarTodo();
+
+   public void actualizar(String profesion,String foto, String descripcion);
 
    public void modificar();
 
-   public Habilidad buscar();
+   public SobreMi buscar(int id);
 
-   public void eliminar();
+   public void eliminar(int id);
    
 }

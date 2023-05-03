@@ -2,16 +2,18 @@ package com.portfolio.demo.servicios;
 
 import java.util.List;
 
+import com.portfolio.demo.model.Proyecto;
+
 public interface InterfaceProyecto {
 
-   public List<Habilidad> listarTodo();
+   public List<Proyecto> listarTodo();
 
-   public void actualizar();
+   public void actualizar(String imagen,String titulo, String descripcion,String  link);
 
    public void modificar();
 
-   public Habilidad buscar();
+   public Proyecto buscar(int id);
 
-   public void eliminar();
+   public void eliminar(int id);
    
 }

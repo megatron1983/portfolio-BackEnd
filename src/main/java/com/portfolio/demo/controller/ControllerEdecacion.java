@@ -1,39 +1,37 @@
 package com.portfolio.demo.controller;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.portfolio.demo.model.Habilidad;
-import com.portfolio.demo.servicios.InterfaceHabilidad;
-
+import com.portfolio.demo.model.Educacion;
+import com.portfolio.demo.servicios.InterfaceEducacion;
 @RestController
-@RequestMapping("/Habilidad")
-public class ControllerHabilidad {
-
+@RequestMapping("/Educacion")
+public class ControllerEdecacion {
    @Autowired
-   private InterfaceHabilidad service;
+   private InterfaceEducacion service;
 
    @PostMapping("/ListarTodo")
-   public List<Habilidad> listarTodo() {
+   public List<Educacion> listarTodo() {
 
       return service.listarTodo();
 
    }
 
    @PostMapping("/actualizar")
-   public void actualizar(@RequestBody String nombre_icono, @RequestBody String nombre, @RequestBody int porcentaje) {
-      service.actualizar(nombre_icono, nombre, porcentaje);
+   public void actualizar(@RequestBody Date fecha_inicio, @RequestBody Date fecha_final, @RequestBody String nombre_empresa, String titulo, String descripcion) {
+      service.actualizar( fecha_inicio,  fecha_final,  nombre_empresa,  titulo, descripcion);
 
    }
    
    @PostMapping("/buscar")
-   public Habilidad buscar(@RequestBody int id) {
+   public Educacion buscar(@RequestBody int id) {
       return service.buscar(id);
 
    }
@@ -44,4 +42,7 @@ public class ControllerHabilidad {
 
    }
 
- }
+
+
+   
+}

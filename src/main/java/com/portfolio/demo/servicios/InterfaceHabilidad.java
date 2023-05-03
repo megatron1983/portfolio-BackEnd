@@ -12,9 +12,9 @@ public interface InterfaceHabilidad {
 
    public void modificar();
 
-   public Habilidad buscar();
+   public Habilidad buscar(int id);
 
-   public void eliminar();
+   public void eliminar(int id);
    
 
    
