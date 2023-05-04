@@ -5,7 +5,7 @@ import java.util.List;
 import com.portfolio.demo.model.SobreMi;
 
 public interface InterfaceSobreMi {
-   public SobreMi listarTodo();
+   public List<SobreMi> listarTodo();
 
    public void actualizar(String profesion,String foto, String descripcion);
 

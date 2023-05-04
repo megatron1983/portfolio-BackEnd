@@ -1,11 +1,24 @@
 package com.portfolio.demo.model;
+
 import lombok.Getter;
 import lombok.Setter;
 import java.util.Date;
-@Getter
+
+import jakarta.persistence.Basic;
+import jakarta.persistence.Id;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+
 @Setter
+@Getter
+@Entity
 public class Educacion {
+   @Id
+   @GeneratedValue(strategy = GenerationType.AUTO)
    private int id;
+
+   @Basic
    private Date fecha_inicio;
    private Date fecha_final;
    private String nombre_empresa;
@@ -25,9 +38,4 @@ public class Educacion {
       this.descripcion = descripcion;
    }
 
-   
-
-   
-
-   
 }

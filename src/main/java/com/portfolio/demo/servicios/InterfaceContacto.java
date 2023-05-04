@@ -1,11 +1,9 @@
 package com.portfolio.demo.servicios;
 
-import java.util.List;
-
 import com.portfolio.demo.model.Contacto;
 
 public interface InterfaceContacto {
-   
+
    public Contacto listarTodo();
 
    public void actualizar(String telefono, String direccion, String email);

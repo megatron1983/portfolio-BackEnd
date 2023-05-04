@@ -11,7 +11,7 @@ public interface InterfaceEducacion {
 
    public void actualizar(Date fecha_inicio, Date fecha_final, String nombre_empresa, String titulo, String descripcion);
 
-   public void modificar();
+   public void modificar(int id,Date fecha_inicio, Date fecha_final, String nombre_empresa, String titulo, String descripcion);
 
    public Educacion buscar(int id);
 
