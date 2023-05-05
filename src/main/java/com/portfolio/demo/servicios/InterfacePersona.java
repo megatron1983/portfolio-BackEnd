@@ -8,7 +8,7 @@ public interface InterfacePersona {
 
    public void actualizar(String titulo,String imagen, String password,String usuario);
 
-   public void modificar();
+   public void modificar(int id,String titulo, String imagen, String password, String usuario);
 
    public Persona buscar(int id);
 

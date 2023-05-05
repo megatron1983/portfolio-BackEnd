@@ -10,7 +10,7 @@ public interface InterfaceProyecto {
 
    public void actualizar(String imagen,String titulo, String descripcion,String  link);
 
-   public void modificar();
+   public void modificar(int id,String imagen,String titulo, String descripcion,String  link);
 
    public Proyecto buscar(int id);
 

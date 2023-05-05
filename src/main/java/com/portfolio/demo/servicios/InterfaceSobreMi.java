@@ -9,7 +9,7 @@ public interface InterfaceSobreMi {
 
    public void actualizar(String profesion,String foto, String descripcion);
 
-   public void modificar();
+   public void modificar(int id,String profesion,String foto, String descripcion);
 
    public SobreMi buscar(int id);
 

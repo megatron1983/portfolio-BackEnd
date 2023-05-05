@@ -29,12 +29,12 @@ public class HabilidadServi implements InterfaceHabilidad {
 
    @Override
    public Habilidad buscar(int id) {
-      throw new UnsupportedOperationException("Unimplemented method 'buscar'");
+      return baseRepo.findById(id);
    }
 
    @Override
    public void eliminar(int id) {
-      throw new UnsupportedOperationException("Unimplemented method 'eliminar'");
+      baseRepo.deleteById(id);
    }
 
 }
