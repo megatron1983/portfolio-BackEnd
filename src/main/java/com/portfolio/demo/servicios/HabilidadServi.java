@@ -3,10 +3,10 @@ package com.portfolio.demo.servicios;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.stereotype.Service;
 import com.portfolio.demo.model.Habilidad;
 import com.portfolio.demo.repository.RepoHabilidad;
-
+@Service
 public class HabilidadServi implements InterfaceHabilidad {
    @Autowired
    private RepoHabilidad baseRepo;
@@ -29,7 +29,7 @@ public class HabilidadServi implements InterfaceHabilidad {
 
    @Override
    public Habilidad buscar(int id) {
-      return baseRepo.findById(id);
+      return baseRepo.findById(id).orElse(null);
    }
 
    @Override

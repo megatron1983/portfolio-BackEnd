@@ -3,10 +3,11 @@ package com.portfolio.demo.servicios;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.stereotype.Service;
 import com.portfolio.demo.model.Persona;
 import com.portfolio.demo.repository.RepoPersona;
 
+@Service
 public class PersonaServi implements InterfacePersona{
    @Autowired
     private RepoPersona baseRepo;
@@ -30,7 +31,7 @@ public class PersonaServi implements InterfacePersona{
 
     @Override
     public Persona buscar(int id) {
-        return baseRepo.findById(id);
+        return baseRepo.findById(id).orElse(null);
     }
 
     @Override

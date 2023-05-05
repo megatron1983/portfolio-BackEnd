@@ -3,6 +3,8 @@ package com.portfolio.demo.servicios;
 import java.util.List;
 
 import com.portfolio.demo.model.Contacto;
+//@Bean
+
 
 public interface InterfaceContacto {
 
@@ -11,6 +13,7 @@ public interface InterfaceContacto {
    public void actualizar(String telefono, String direccion, String email);
 
    public void modificar(int id,String telefono, String direccion, String email);
+   // public void modificar(Contacto contact);
 
    public Contacto buscar(int id);
 

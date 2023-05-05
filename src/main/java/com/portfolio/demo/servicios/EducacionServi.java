@@ -4,11 +4,11 @@ import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.stereotype.Service;
 import com.portfolio.demo.model.Educacion;
 import com.portfolio.demo.repository.RepoEducacion;
-import com.portfolio.demo.repository.RepoHabilidad;
 
+@Service
 public class EducacionServi implements InterfaceEducacion {
     @Autowired
     private RepoEducacion baseRepo;
@@ -34,7 +34,7 @@ public class EducacionServi implements InterfaceEducacion {
 
     @Override
     public Educacion buscar(int id) {
-        return baseRepo.findById(id);
+        return baseRepo.findById(id).orElse(null);
     }
 
     @Override
