@@ -18,16 +18,12 @@ public class PersonaServi implements InterfacePersona{
     }
 
     @Override
-    public void actualizar( String titulo, String imagen, String password, String usuario) {
-        Persona persona = new Persona();
-        baseRepo.save(persona);
-    }
-
-    @Override
-    public void modificar(Persona persona) {
+    public void actualizar( Persona persona ) {
         
         baseRepo.save(persona);
     }
+
+   
 
     @Override
     public Persona buscar(int id) {

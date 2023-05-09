@@ -24,11 +24,7 @@ public class ExperienciaLaboralServi implements InterfaceExperienciaLaboral {
         baseRepo.save(laboral);
     }
 
-    @Override
-    public void modificar(int id,String logo,Date fecha_inicio,  Date fecha_final, String nombre_empresa, String cargo, String descripcion) {
-        ExperienciaLaboral experiencia = new ExperienciaLaboral(id, logo, fecha_inicio,   fecha_final,  nombre_empresa,  cargo,  descripcion);
-        baseRepo.save(experiencia);
-    }
+    
 
     @Override
     public ExperienciaLaboral buscar(int id) {

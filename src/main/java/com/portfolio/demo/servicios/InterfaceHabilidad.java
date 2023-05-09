@@ -11,7 +11,7 @@ public interface InterfaceHabilidad {
 
    public void actualizar(Habilidad habilidad);
 
-   public void modificar();
+   
 
    public Habilidad buscar(int id);
 
