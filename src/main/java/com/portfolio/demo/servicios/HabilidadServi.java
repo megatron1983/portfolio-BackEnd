@@ -17,15 +17,12 @@ public class HabilidadServi implements InterfaceHabilidad {
    }
 
    @Override
-   public void actualizar(String nombre_icono, String nombre, int porcentaje) {
-      Habilidad skill = new Habilidad(porcentaje, nombre_icono, nombre, porcentaje);
-      baseRepo.save(skill);
+   public void actualizar(Habilidad habilidad) {
+      
+      baseRepo.save(habilidad);
    }
 
-   @Override
-   public void modificar() {
-      throw new UnsupportedOperationException("Unimplemented method 'modificar'");
-   }
+   
 
    @Override
    public Habilidad buscar(int id) {

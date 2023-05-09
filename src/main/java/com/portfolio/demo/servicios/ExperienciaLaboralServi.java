@@ -19,10 +19,9 @@ public class ExperienciaLaboralServi implements InterfaceExperienciaLaboral {
     }
 
     @Override
-    public void actualizar(String logo,Date fecha_inicio,  Date fecha_final, String nombre_empresa, String cargo, String descripcion) {
-        ExperienciaLaboral experiencia = new         ExperienciaLaboral();
-
-        baseRepo.save(experiencia);
+    public void actualizar(ExperienciaLaboral laboral) {
+        
+        baseRepo.save(laboral);
     }
 
     @Override

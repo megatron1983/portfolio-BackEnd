@@ -27,8 +27,8 @@ public class ControllerExperienciaLaboral {
    }
 
    @PostMapping("/actualizar")
-   public void actualizar(@RequestBody String logo, @RequestBody Date fecha_inicio, @RequestBody Date fecha_final,@RequestBody String nombre_empresa,@RequestBody String cargo,@RequestBody String descripcion) {
-      service.actualizar( logo,fecha_inicio,   fecha_final, nombre_empresa, cargo, descripcion);
+   public void actualizar(@RequestBody ExperienciaLaboral laboral) {
+      service.actualizar(  laboral);
 
    }
    

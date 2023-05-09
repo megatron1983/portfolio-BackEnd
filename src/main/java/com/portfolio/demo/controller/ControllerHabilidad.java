@@ -26,8 +26,8 @@ public class ControllerHabilidad {
    }
 
    @PostMapping("/actualizar")
-   public void actualizar(@RequestBody String nombre_icono, @RequestBody String nombre, @RequestBody int porcentaje) {
-      service.actualizar(nombre_icono, nombre, porcentaje);
+   public void actualizar(@RequestBody Habilidad habilidad) {
+      service.actualizar(habilidad);
 
    }
    

@@ -25,8 +25,8 @@ public class ControllerPersona {
    }
 
    @PostMapping("/actualizar")
-   public void actualizar(@RequestBody String titulo, @RequestBody String imagen, @RequestBody String password,@RequestBody String usuario ) {
-      service.actualizar(titulo, imagen, password, usuario);
+   public void actualizar(@RequestBody Persona persona) {
+      service.actualizar(persona);
 
    }
    

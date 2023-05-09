@@ -6,9 +6,9 @@ public interface InterfacePersona {
 
    public List<Persona> listarTodo();
 
-   public void actualizar(String titulo,String imagen, String password,String usuario);
+   public void actualizar(Persona persona);
 
-   public void modificar(int id,String titulo, String imagen, String password, String usuario);
+  
 
    public Persona buscar(int id);
 

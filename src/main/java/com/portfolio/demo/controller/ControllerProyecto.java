@@ -25,8 +25,8 @@ public class ControllerProyecto {
    }
 
    @PostMapping("/actualizar")
-   public void actualizar(@RequestBody String imagen, @RequestBody String titulo, @RequestBody String descripcion, String link) {
-      service.actualizar( imagen, titulo, descripcion,  link);
+   public void actualizar(@RequestBody Proyecto proyecto) {
+      service.actualizar( proyecto);
 
    }
    

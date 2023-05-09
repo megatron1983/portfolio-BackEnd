@@ -17,17 +17,12 @@ public class SobreMiServi implements InterfaceSobreMi{
     }
 
     @Override
-    public void actualizar( String profesion, String foto, String descripcion) {
-        SobreMi contacto = new SobreMi();
-        baseRepo.save(contacto);
+    public void actualizar( SobreMi sobre) {
+        
+        baseRepo.save(sobre);
     }
 
-    @Override
-    public void modificar(int id, String profesion, String foto, String descripcion) {
-        SobreMi contacto = new SobreMi(id,profesion, foto, descripcion);
-        baseRepo.save(contacto);
-    }
-
+   
     @Override
     public SobreMi buscar(int id) {
         return baseRepo.findById(id).orElse(null);

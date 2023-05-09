@@ -8,10 +8,9 @@ public interface InterfaceProyecto {
 
    public List<Proyecto> listarTodo();
 
-   public void actualizar(String imagen,String titulo, String descripcion,String  link);
+   public void actualizar(Proyecto proyecto);
 
-   public void modificar(int id,String imagen,String titulo, String descripcion,String  link);
-
+   
    public Proyecto buscar(int id);
 
    public void eliminar(int id);

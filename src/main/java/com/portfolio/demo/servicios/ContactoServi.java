@@ -18,8 +18,7 @@ public class ContactoServi implements InterfaceContacto {
     }
 
     @Override
-    public void actualizar(String telefono, String direccion, String email) {
-        Contacto contacto = new Contacto();
+    public void actualizar(Contacto contacto ) {
         baseRepo.save(contacto);
     }
 

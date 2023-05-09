@@ -25,8 +25,8 @@ public class ControllerContacto {
    }
 
    @PostMapping("/actualizar")
-   public void actualizar(@RequestBody String telefono, @RequestBody String direccion, @RequestBody String email) {
-      service.actualizar(telefono, direccion, email);
+   public void actualizar(@RequestBody Contacto contacto) {
+      service.actualizar(contacto);
 
    }
 

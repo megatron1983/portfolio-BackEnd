@@ -9,9 +9,9 @@ public interface InterfaceEducacion {
 
    public List<Educacion> listarTodo();
 
-   public void actualizar(Date fecha_inicio, Date fecha_final, String nombre_empresa, String titulo, String descripcion);
+   public void actualizar(Educacion educacion);
 
-   public void modificar(int id,Date fecha_inicio, Date fecha_final, String nombre_empresa, String titulo, String descripcion);
+   
 
    public Educacion buscar(int id);
 

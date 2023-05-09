@@ -17,18 +17,12 @@ public class ProyectoServi implements InterfaceProyecto{
     }
 
     @Override
-    public void actualizar( String imagen, String titulo, String descripcion, String link) {
-       Proyecto proyecto = new Proyecto();
+    public void actualizar( Proyecto proyecto) {
+       
         baseRepo.save(proyecto);
     }
 
-    @Override
-    public void modificar(int id, String imagen, String titulo, String descripcion, String link) {
-       Proyecto proyecto = new Proyecto( id,  imagen,  titulo,  descripcion,  link);
-
-        baseRepo.save(proyecto);
-
-    }
+    
 
     @Override
     public Proyecto buscar(int id) {

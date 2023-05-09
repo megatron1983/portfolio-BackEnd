@@ -13,7 +13,7 @@ import com.portfolio.demo.model.Educacion;
 import com.portfolio.demo.servicios.InterfaceEducacion;
 @RestController
 @RequestMapping("/Educacion")
-public class ControllerEdecacion {
+public class ControllerEducacion {
    @Autowired
    private InterfaceEducacion service;
 
@@ -25,8 +25,8 @@ public class ControllerEdecacion {
    }
 
    @PostMapping("/actualizar")
-   public void actualizar(@RequestBody Date fecha_inicio, @RequestBody Date fecha_final, @RequestBody String nombre_empresa, String titulo, String descripcion) {
-      service.actualizar( fecha_inicio,  fecha_final,  nombre_empresa,  titulo, descripcion);
+   public void actualizar(@RequestBody Educacion educacion) {
+      service.actualizar( educacion);
 
    }
    

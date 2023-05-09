@@ -10,7 +10,7 @@ public interface InterfaceContacto {
 
    public List<Contacto> listarTodo();
 
-   public void actualizar(String telefono, String direccion, String email);
+   public void actualizar(Contacto contacto);
 
    public void modificar(int id,String telefono, String direccion, String email);
    // public void modificar(Contacto contact);

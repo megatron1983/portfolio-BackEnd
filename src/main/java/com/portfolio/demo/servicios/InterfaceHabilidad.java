@@ -9,7 +9,7 @@ public interface InterfaceHabilidad {
    
    public List<Habilidad> listarTodo();
 
-   public void actualizar(String nombre_icono,String nombre, int porcentaje);
+   public void actualizar(Habilidad habilidad);
 
    public void modificar();
 
