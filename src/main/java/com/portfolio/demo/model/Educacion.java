@@ -2,7 +2,7 @@ package com.portfolio.demo.model;
 
 import lombok.Getter;
 import lombok.Setter;
-import java.util.Date;
+import java.sql.Date;
 
 import jakarta.persistence.Basic;
 import jakarta.persistence.Id;
