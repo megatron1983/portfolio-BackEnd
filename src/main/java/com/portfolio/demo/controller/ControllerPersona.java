@@ -10,8 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.portfolio.demo.model.Persona;
 import com.portfolio.demo.servicios.InterfacePersona;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController
+@CrossOrigin(origins ={"https://portfolio-ap-maxi.web.app/"})
 @RequestMapping("/Persona")
 public class ControllerPersona {
    @Autowired

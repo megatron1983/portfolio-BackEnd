@@ -10,8 +10,10 @@ import com.portfolio.demo.model.SobreMi;
 import com.portfolio.demo.servicios.InterfaceSobreMi;
 
 import java.util.List;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController
+@CrossOrigin(origins ={"https://portfolio-ap-maxi.web.app/"})
 @RequestMapping("/SobreMi")
 public class ControllerSobreMi {
    @Autowired
