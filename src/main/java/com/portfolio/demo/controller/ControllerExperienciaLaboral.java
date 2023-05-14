@@ -14,7 +14,7 @@ import com.portfolio.demo.servicios.InterfaceExperienciaLaboral;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController
-@CrossOrigin(origins ={"https://portfolio-ap-maxi.web.app/"})
+//@CrossOrigin(origins ={"https://portfolio-ap-maxi.web.app/"})
 @RequestMapping("/ExperienciaLaboral")
 public class ControllerExperienciaLaboral {
 

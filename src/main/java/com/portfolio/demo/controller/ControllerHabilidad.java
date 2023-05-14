@@ -13,7 +13,7 @@ import com.portfolio.demo.servicios.InterfaceHabilidad;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController
-@CrossOrigin(origins ={"https://portfolio-ap-maxi.web.app/"})
+//@CrossOrigin(origins ={"https://portfolio-ap-maxi.web.app/"})
 @RequestMapping("/Habilidad")
 public class ControllerHabilidad {
 

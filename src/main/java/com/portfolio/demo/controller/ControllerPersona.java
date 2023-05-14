@@ -13,7 +13,7 @@ import com.portfolio.demo.servicios.InterfacePersona;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController
-@CrossOrigin(origins ={"https://portfolio-ap-maxi.web.app/"})
+//@CrossOrigin(origins ={"https://portfolio-ap-maxi.web.app/"})
 @RequestMapping("/Persona")
 public class ControllerPersona {
    @Autowired
