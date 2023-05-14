@@ -10,7 +10,6 @@ import java.util.List;
 
 import com.portfolio.demo.model.Contacto;
 import com.portfolio.demo.servicios.InterfaceContacto;
-import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController
 //@CrossOrigin(origins ={"https://portfolio-ap-maxi.web.app/"})

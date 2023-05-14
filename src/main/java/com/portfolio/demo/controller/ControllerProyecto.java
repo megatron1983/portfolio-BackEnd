@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.portfolio.demo.model.Proyecto;
 import com.portfolio.demo.servicios.InterfaceProyecto;
-import org.springframework.web.bind.annotation.CrossOrigin;
+
 
 @RestController
 //@CrossOrigin(origins ={"https://portfolio-ap-maxi.web.app/"})
